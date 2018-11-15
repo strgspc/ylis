@@ -1,0 +1,61 @@
+<style>button {font-size: 25px;}</style>
+<button id="one" onclick="button1()">1</button>
+<button id="two" onclick="button2()">2</button>
+<button id="three" onclick="button3()">3</button><br/>
+<button id="four" onclick="button4()">4</button>
+<button id="five" onclick="button5()">5</button>
+<button id="six" onclick="button6()">6<br/></button><br/>
+<button id="seven" onclick="button7()">7</button>
+<button id="eight" onclick="button8()">8</button>
+<button id="nine" onclick="button9()">9<br/></button><br/>
+<button id="zero" onclick="button0()">0</button>
+<p id="paragraph"></p>
+<script>
+var number1 = 0;
+var paragraph = document.getElementById("paragraph");
+function update() {
+    paragraph.innerHTML = number1;
+}
+function button1() {
+    number1 += 1;
+    update();
+}
+function button2() {
+    number1 += 2;
+    update();
+}
+    function button3() {
+    number1 += 3;
+    update();
+}
+    function button4() {
+    number1 += 4;
+    update();
+}
+    function button5() {
+    number1 += 5;
+    update();
+}
+    function button6() {
+    number1 += 6;
+    update();
+}
+    function button7() {
+    number1 += 7;
+    update();
+}
+    function button8() {
+    number1 += 8;
+    update();
+}
+    function button9() {
+    number1 += 9;
+    update();
+}
+    function button0() {
+    number1 = number1 + "0";
+    number1 = parseInt(number1);
+    update();
+}
+    
+</script>
